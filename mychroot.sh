@@ -7,6 +7,9 @@ export USER=root
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH
 export TERM=vt100
 
+#mkdir $LINUXROOT
+#mount -t ext3 -o noatime,rw /dev/block/mmcblkXpY
+
 mount -t proc proc $LINUXROOT/proc
 mount -t sysfs sysfs $LINUXROOT/sys
 mount -o bind /dev $LINUXROOT/dev 
