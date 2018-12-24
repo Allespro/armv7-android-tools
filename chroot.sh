@@ -25,6 +25,6 @@ if [ -n "$FILES" ]; then
 	mount_and_chroot
 else
 	echo "*************Mounting system*************"
-	mount -t ext3 -o rw,noatime /dev/block/mmcblk0p1
+	mount -t ext3 -o rw,noatime /dev/block/mmcblk0p1 /data/local/mnt
 	mount_and_chroot
 fi
